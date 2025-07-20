@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Smart Library – Application</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #27ae60;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        p.info-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        BANK APPLICATION
+    </header>
+
+    <div class="container">
+        <form action="application" method="post">
+            <h2>Select an Action</h2>
+
+            <div class="button-group">
+                <button class="btn" type="submit" name="feature" value="withdraw">Withdraw</button>
+                <button class="btn" type="submit" name="feature" value="deposit">Deposit</button>
+                <button class="btn" type="submit" name="feature" value="transferMoney">Transact Money</button>
+            </div>
+
+            <p class="info-text">Press a button to perform the selected action.</p>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Smart Library | All rights reserved.
+    </footer>
+
+</body>
+</html>
